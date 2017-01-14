@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body {
+	margin: 0;
+}
+
+p {
+	margin: 10px;
+}
+
+.iframe-content-wrap {
+	display: -webkit-box;
+	display: box;
+}
+
+.iframe-content-block {
+	-webkit-box-flex: 1;
+	box-flex: 1;
+}
+
+.iframe-content {
+	position: relative;
+	width: 100%;
+	padding: 75% 0 0 0;
+}
+
+.iframe-content iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+<body>
+	<p>2カラム</p>
+	<div class="iframe-content-wrap">
+	<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2" style="background-color: red;">Red</div>
+				<div class="col-sm-8 hidden-xs" style="background-color: blue;">Blue</div>
+				<div class="col-sm-2" style="background-color: yellow;">Yellow</div>
+			</div>
+		</div>
+		<div class="iframe-content-block">
+			<div class="iframe-content">
+				<iframe src="http://objectvr.k-relations.com//view/iframe.php?t=1932495bf24aadbe10bf4e65b1a4a9eb"
+					frameborder="0"></iframe>
+			</div>
+		</div>
+		<div class="iframe-content-block">
+			<div class="iframe-content">
+				<iframe src="http://www.youtube.com/embed/qN9dcDtXJyM?rel=0"
+					frameborder="0"></iframe>
+			</div>
+		</div>
+	</div>
+	<p>1カラム</p>
+	<div class="iframe-content">
+		<iframe src="http://www.youtube.com/embed/0h7Ra6BfsG8?rel=0"
+			frameborder="0"></iframe>
+	</div>
+</body>
+</html>
